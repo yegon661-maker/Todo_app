@@ -153,13 +153,18 @@ def login():
         return "Invalid login"
 
     return """
-    <h2>Login</h2>
-    <form method="POST">
-        <input name="username" placeholder="Username"><br><br>
-        <input name="password" type="password" placeholder="Password"><br><br>
-        <button>Login</button>
-    </form>
-    """
+<h2>Login</h2>
+
+<form method="POST">
+    <input name="username" placeholder="Username"><br><br>
+    <input name="password" type="password" placeholder="Password"><br><br>
+    <button>Login</button>
+</form>
+
+<br>
+
+<a href="/register">Don't have an account? Register here</a>
+"""
 
 # ---------------- TASKS ----------------
 @app.route("/tasks")
