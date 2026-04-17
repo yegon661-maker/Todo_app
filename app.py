@@ -30,7 +30,9 @@ def init_db():
     conn.close()
 
 init_db()
-
+@app.route("/")
+def home():
+    return redirect("/login")
 # -------- REGISTER --------
 @app.route("/register", methods=["GET", "POST"])
 def register():
